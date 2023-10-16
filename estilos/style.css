@@ -1,0 +1,153 @@
+@charset 'UTF-8';
+
+:root {
+    --cor1: #49A90D;
+    --cor2: #49A09D;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, html {
+    background-color: #B0C9F3;
+    height: 100vh;
+    width: 100vw ;
+}
+
+main {
+    position: relative;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%);
+    margin-top: 50px;
+    background-color: white;
+    width: 255px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.726);
+}
+
+section#login > div#imagem {
+    display: block;
+    background-image: url(../bulding.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    background-position: left bottom
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+
+div.zona-login {
+    border: 1px solid #49A09D;
+    border-radius: 5px;
+    padding: -2px 0px;
+    margin: 2px 0px;
+}
+
+#i {
+    transform:translateY(3px);
+    margin-left:3px;
+    font-size: 25px;
+
+}
+
+input {
+    background-color: #a8c7f3 ;
+    transform:translateY(1px);
+    margin: 8px 0px;
+    width: calc(100% - 40px);
+    border-radius: 5px;
+    padding: 8px;
+}
+
+input:hover {
+    background-color: white;
+}
+
+div.campo > label {
+    display: none;
+}
+
+section.entrada-dados {
+    margin: 17px 0px;
+}
+
+form input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;   
+    background-color: #759fd8;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover {
+    background-color: #2b4569;
+    text-decoration: underline;
+}
+
+.esqueci {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 7px;
+
+    border: 2px solid #759fd8;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    padding-top: 8px;
+    padding-left: 1px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #3b5983;
+    cursor: pointer;
+}
+
+.esqueci:hover {
+    background-color: #2b4569;
+    color: white;
+}
+
+.botao-esqueci {
+    text-decoration: none;
+    font-size: 0.8em;
+    color: #3b5983;
+}
+
+.botao-esqueci:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+div > span.material-symbols-outlined {
+    font-size: 19px;
+}
+
+
